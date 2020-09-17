@@ -19,6 +19,8 @@
         <module>cloud-provider-payment8002</module>
         <module>cloud-provide-payment8004</module>
         <module>cloud-consumerzk-order9004</module>
+        <module>cloud-provideconsul-payment8006</module>
+        <module>cloud-consumerconsul-order9006</module>
     </modules>
 
     <!-- 统一管理jar包版本 -->
