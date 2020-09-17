@@ -16,3 +16,6 @@ eureka:
 ribbon:
   ReadTimeout: 5000 #建立连接所用的时间
   ConnectTimeout: 5000 #建立连接后，服务器读取到资源的可用时间
+logging:
+  level:
+    com.hjs.springcloud.feign.PaymentRemoteService: debug
