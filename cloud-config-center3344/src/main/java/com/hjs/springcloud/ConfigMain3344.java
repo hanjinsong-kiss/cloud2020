@@ -10,7 +10,8 @@ import org.springframework.cloud.config.server.EnableConfigServer;
 @EnableConfigServer
 @SpringBootApplication
 /**
- * curl -X POST "http://localhost:3344/actuator/bus-refresh"
+ * curl -X POST "http://localhost:3344/actuator/bus-refresh"全局通知
+ * curl -X POST "http://localhost:3344/actuator/bus-refresh/config-client:3355"定点通知
  */
 public class ConfigMain3344 {
 
