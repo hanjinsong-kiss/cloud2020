@@ -1,23 +1,21 @@
 server:
-  port: 3344
+  port: 3366
+
 spring:
   application:
-    name: cloud-config-center
+    name: config-client
   cloud:
     config:
-      server:
-        git:
-          uri: https://gitee.com/han_kiss/springcloud-config
-          #搜索目录
-          search-paths:
-            - springcloud-config
-      #读取分支
       label: master
+      name: config
+      profile: client
+      uri: http://localhost:3344
   rabbitmq:
     host: localhost
     port: 5672
     username: guest
     password: guest
+
 eureka:
   client:
     service-url:
@@ -28,4 +26,4 @@ management:
   endpoints:
     web:
       exposure:
-        include: 'bus-refresh'
+        include: "*"

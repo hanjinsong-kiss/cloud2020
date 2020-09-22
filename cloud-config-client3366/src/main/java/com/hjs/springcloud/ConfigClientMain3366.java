@@ -4,18 +4,13 @@ package com.hjs.springcloud;
 import org.springframework.boot.SpringApplication;
 import org.springframework.boot.autoconfigure.SpringBootApplication;
 import org.springframework.cloud.client.discovery.EnableDiscoveryClient;
-import org.springframework.cloud.config.server.EnableConfigServer;
 
-@EnableDiscoveryClient
-@EnableConfigServer
 @SpringBootApplication
-/**
- * curl -X POST "http://localhost:3344/actuator/bus-refresh"
- */
-public class ConfigMain3344 {
+@EnableDiscoveryClient
+public class ConfigClientMain3366 {
 
     public static void main(String[] args) {
-        SpringApplication.run(ConfigMain3344.class, args);
+        SpringApplication.run(ConfigClientMain3366.class, args);
     }
 
 }
