@@ -33,6 +33,7 @@
         <module>cloudalibaba-provider-payment8009</module>
         <module>cloudalibaba-consumer-order9008</module>
         <module>cloudalibaba-config-client3377</module>
+        <module>cloudalibaba-sentinel-service8401</module>
     </modules>
 
     <!-- 统一管理jar包版本 -->
